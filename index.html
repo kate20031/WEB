@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <link rel="stylesheet" href="style_index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Компанія</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <div class="logo me-3">
+            <img src="https://cdn-icons-png.flaticon.com/512/829/829225.png" alt="Логотип" width="80" height="80">
+          </div>
+          <div class="d-flex flex-column">
+            <h1 class="m-0" style="font-size: 18px; font-weight: bold; line-height: 1.2;"> Компанія <span style="display: block;">“Зоотовари”</span>
+            </h1>
+            <small style="font-size: 12px; color: #555; margin-top: 8px;">Турбота. Якість. Надійність. Ціна.</small>
+          </div>
+        </div>
+        <div class="contacts text-end" style="font-size: 22px;">
+          <div>+38(044) 123-45-67</div>
+          <div>+38(044) 765-43-21</div>
+          <a href="#" class="feedback-link" style="font-size: 16px; color: #666; font-weight: bold;">Зворотний зв’язок</a>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="container-fluid">
+        <ul class="menu">
+          <li>
+            <a href="#">Головна</a>
+          </li>
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Доставка та оплата</a>
+          </li>
+          <li>
+            <a href="about.html">Про нас</a>
+          </li>
+          <li>
+            <a href="#">Контакти</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="slider">
+      <img id="slide-img" src="https://as1.ftcdn.net/v2/jpg/09/58/23/72/1000_F_958237227_1BASKnM7JvHQHQ4f3t6Hv5ztz2iRTLIt.jpg" alt="Слайд 1">
+      <div class="arrow left" onclick="prevImage()">
+        <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="←">
+      </div>
+      <div class="arrow right" onclick="nextImage()">
+        <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="→">
+      </div>
+    </section>
+    <main class="container py-4">
+      <div class="row g-4">
+        <nav aria-label="breadcrumb" style="background-color:transparent">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">Головна</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Каталог</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Корм</li>
+          </ol>
+        </nav>
+        <aside class="col-md-3 mb-4">
+          <ul class="list-unstyled ms-2">
+            <li>
+              <a href="#">Амуніція</a>
+            </li>
+            <li>
+              <a class="underline">Корм</a>
+              <ul>
+                <li>
+                  <a href="#" class="underline" style="font-weight: bold">Для собак</a>
+                </li>
+                <li>
+                  <a href="#">Для котів</a>
+                </li>
+                <li>
+                  <a href="#">Для гризунів</a>
+                </li>
+                <li>
+                  <a href="#">Для плазунів</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Іграшки</a>
+            </li>
+            <li>
+              <a href="#">Наповнювачі для лотків</a>
+            </li>
+            <li>
+              <a href="#">Одяг</a>
+            </li>
+            <li>
+              <a href="#">Миски</a>
+            </li>
+          </ul>
+          <div class="mt-4 text-center">
+            <a href="#" class="d-block text-decoration-none">
+              <img src="https://cdn-icons-png.flaticon.com/512/7613/7613104.png" style="margin-top: 40px; width: 90px" alt="Прайс-лист">
+              <div>
+                <strong>Прайс-лист</strong>
+              </div>
+            </a>
+          </div>
+        </aside>
+
+        <div class="col-md-9">
+
+          <div class="row g-4">
+            <div class="col-6 col-sm-4 col-lg-4">
+              <div class="card h-100 d-flex flex-column">
+                <div class="ratio ratio-1x1">
+                  <div class="d-flex justify-content-center align-items-center w-100 h-100" style="background-color: #8ec8dd;">
+                    <img src="https://images.prom.ua/4679812687_w640_h640_purina-pro-plan.jpg" class="img-fluid rounded-0" style="object-fit: cover; width: 80%; height: 80%;" alt="Картинка товару">
+                  </div>
+                </div>
+                <div class="card-body text-center mt-auto">
+                  <p class="card-text">Корм сухий для великих порід</p>
+                  <strong>1 599 грн</strong>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="product-purina-proplan.html" class="btn btn-primary">Читати більше</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-4">
+              <div class="card h-100 d-flex flex-column">
+                <div class="ratio ratio-1x1">
+                  <div class="d-flex justify-content-center align-items-center w-100 h-100" style="background-color: #8ec8dd;">
+                    <img src="https://images.prom.ua/4679845050_w640_h640_purina-pro-plan.jpg" class="img-fluid rounded-0" style="object-fit: cover; width: 80%; height: 80%;" alt="Картинка товару">
+                  </div>
+                </div>
+                <div class="card-body text-center mt-auto">
+                  <p class="card-text">Корм сухий для середніх порід</p>
+                  <strong>1 499 грн</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-4">
+              <div class="card h-100 d-flex flex-column">
+                <div class="ratio ratio-1x1">
+                  <div class="d-flex justify-content-center align-items-center w-100 h-100" style="background-color: #8ec8dd;">
+                    <img src="https://images.prom.ua/4679812687_w640_h640_purina-pro-plan.jpg" class="img-fluid rounded-0" style="object-fit: contain; width: 80%; height: 80%;" alt="Картинка товару">
+                  </div>
+                </div>
+                <div class="card-body text-center mt-auto">
+                  <p class="card-text">Корм сухий для великих порід</p>
+                  <strong>1 799 грн</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-4">
+              <div class="card h-100 d-flex flex-column">
+                <div class="ratio ratio-1x1">
+                  <div class="d-flex justify-content-center align-items-center w-100 h-100" style="background-color: #8ec8dd;">
+                    <img src="https://images.prom.ua/4679812687_w640_h640_purina-pro-plan.jpg" class="img-fluid" style="object-fit: contain; max-width: 80%; max-height: 80%;" alt="Картинка товару">
+                  </div>
+                </div>
+                <div class="card-body text-center mt-auto">
+                  <p class="card-text">Корм сухий для великих порід</p>
+                  <strong>1 799 грн</strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-4">
+              <div class="card h-100 d-flex flex-column">
+                <div class="ratio ratio-1x1">
+                  <div class="d-flex justify-content-center align-items-center w-100 h-100" style="background-color: #8ec8dd;">
+                    <img src="https://images.prom.ua/4679845050_w640_h640_purina-pro-plan.jpg" class="img-fluid rounded-0" style="object-fit: cover; width: 80%; height: 80%;" alt="Картинка товару">
+                  </div>
+                </div>
+                <div class="card-body text-center mt-auto">
+                  <p class="card-text">Корм сухий для середніх порід</p>
+                  <strong>1 499 грн</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <span class="page active">1</span>
+            <span class="page">2</span>
+            <span class="page">3</span>
+            <span class="page">4</span>
+            <span class="page">5</span>
+            <span class="page">6</span>
+            <span class="page">7</span>
+          </div>
+          <hr class="footer-separator" />
+          <div class="footer-description">
+            <div class="desc-left">
+              <p>Улюбленці - члени родини, які потребують правильного догляду. Пухнастим друзям необхідні збалансоване харчування, іграшки та купання. Для дбайливої турботи і дозвілля господарі купують різноманітні зоотовари. У нашому магазині представлені кращі позиції від відомих брендів. Зайдіть у каталог і знайдіть все, що потрібно для щасливого життя пухнастого друга. .</p>
+            </div>
+            <div class="desc-right">
+              <p>Ми робимо все, щоб ви вигідно купували необхідні предмети. На сайті можна знайти акційні пропозиції. Зареєструйтеся та отримайте знижку в розмірі 5% на шопінг зоотоварів в Україні. Якщо сума ваших оплачених замовлень перевищить 5000 гривень, ви отримаєте -10% до наступних купівель. Доставка товарів здійснюється Новою Поштою у Київ, Дніпро, Одесу, Львів, Харків та інші міста України. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-left">
+            <p>© 2012 - 2013 ЗАТ «Компанія» <br>info@name.ua </p>
+          </div>
+          <!-- Lista pośrodku -->
+          <ul class="footer-list">
+            <li>
+              <a href="#">Головна</a>
+            </li>
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+            <li>
+              <a href="#">Доставка та оплата</a>
+            </li>
+            <li>
+              <a href="about.html">Про нас</a>
+            </li>
+            <li>
+              <a href="#">Контакти</a>
+            </li>
+          </ul>
+          <div class="footer-right">
+            <img class="footer-icon" src="https://cdn-icons-png.flaticon.com/128/17408/17408184.png">
+            <div class="footer-text">
+              <a href="#"> Розробка сайту </a> - <br> компанія "Піксель Плюс"
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="feedback-modal" class="modal">
+      <div class="modal-content">
+        <h2>ЗВОРОТНИЙ ЗВ'ЯЗОК</h2>
+        <label>Ваше ім’я *</label>
+        <input type="text" id="name">
+        <div class="error-text" id="name-error" style="display: none;">Поле є обов’язковим для заповнення</div>
+        <label>Телефон *</label>
+        <input type="tel" id="phone">
+        <div class="error-text" id="phone-error" style="display: none;">Поле є обов’язковим для заповнення</div>
+        <label>Email *</label>
+        <input type="email" id="email">
+        <div class="error-text" id="email-error" style="display: none;">Поле є обов’язковим для заповнення</div>
+        <label>Повідомлення</label>
+        <textarea id="message"></textarea>
+        <button id="submit-btn">НАДІСЛАТИ</button>
+      </div>
+    </div>
+    <script>
+      const images = ["https://t3.ftcdn.net/jpg/12/68/10/46/240_F_1268104624_rTjmmwXebk4XBS2q2dJnUNCYlJuSS7mf.jpg", "https://t4.ftcdn.net/jpg/06/28/90/55/240_F_628905566_0teuhhBBRgF5wQQA3SwEIiCdcRZYXLeH.jpg", "https://t4.ftcdn.net/jpg/07/71/30/07/240_F_771300713_vno3duu8JdHoBDmi7cXucqwGN2VgjqQs.jpg"];
+      let current = 0;
+      const img = document.getElementById("slide-img");
+      setInterval(() => {
+        img.style.opacity = 0;
+        setTimeout(() => {
+          current = (current + 1) % images.length;
+          img.src = images[current];
+          img.style.opacity = 1;
+        }, 500);
+      }, 4000);
+
+      function showImage(index) {
+        img.style.opacity = 0;
+        setTimeout(() => {
+          img.src = images[index];
+          img.style.opacity = 1;
+        }, 500);
+      }
+
+      function prevImage() {
+        current = (current - 1 + images.length) % images.length;
+        showImage(current);
+      }
+
+      function nextImage() {
+        current = (current + 1) % images.length;
+        showImage(current);
+      }
+      const modal = document.getElementById('feedback-modal');
+      const feedbackLink = document.querySelector('.feedback-link');
+      feedbackLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        modal.style.display = 'flex';
+        modal.style.animation = 'fadeIn 0.3s ease forwards';
+      });
+
+      window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+      document.getElementById('submit-btn').addEventListener('click', function() {
+        const fields = [{
+          id: 'name',
+          placeholder: "Поле є обов’язковим для заповнення"
+        }, {
+          id: 'phone',
+          placeholder: "Поле є обов’язковим для заповнення"
+        }, {
+          id: 'email',
+          placeholder: "Поле є обов’язковим для заповнення"
+        }, ];
+        fields.forEach(field => {
+          const input = document.getElementById(field.id);
+          const error = document.getElementById(`${field.id}-error`);
+          if (!input.value.trim()) {
+            input.classList.add('input-error');
+            input.placeholder = field.placeholder;
+            error.style.display = 'none';
+          } else {
+            input.classList.remove('input-error');
+          }
+        });
+      });
+
+      document.getElementById('feedback-modal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        this.style.display = 'none';
+    }
+});
+    </script>
+  </body>
+</html>
