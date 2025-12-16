@@ -2,24 +2,30 @@
 <html lang="uk">
   <head>
     <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="common.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Компанія</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <header>
       <div class="container d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
+          <!-- Логотип компанії -->
           <div class="logo me-3">
             <img src="https://cdn-icons-png.flaticon.com/512/829/829225.png" alt="Логотип" width="80" height="80">
           </div>
+          <!-- Назва компанії та девіз -->
           <div class="d-flex flex-column">
             <h1 class="m-0" style="font-size: 18px; font-weight: bold; line-height: 1.2;"> Компанія <span style="display: block;">“Зоотовари”</span>
             </h1>
             <small style="font-size: 12px; color: #555; margin-top: 8px;">Турбота. Якість. Надійність. Ціна.</small>
           </div>
         </div>
+        <!-- Контактні номери телефонів та посилання на зворотний зв'язок -->
         <div class="contacts text-end" style="font-size: 22px;">
           <div>+38(044) 123-45-67</div>
           <div>+38(044) 765-43-21</div>
@@ -27,6 +33,8 @@
         </div>
       </div>
     </header>
+
+    <!-- Навігаційне меню -->
     <nav>
       <div class="container-fluid">
         <ul class="menu">
@@ -48,8 +56,11 @@
         </ul>
       </div>
     </nav>
+
+    <!-- Секція з слайдером -->
     <section id="slider">
       <img id="slide-img" src="https://as1.ftcdn.net/v2/jpg/09/58/23/72/1000_F_958237227_1BASKnM7JvHQHQ4f3t6Hv5ztz2iRTLIt.jpg" alt="Слайд 1">
+      <!-- Стрілки для перемикання слайдів -->
       <div class="arrow left" onclick="prevImage()">
         <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="←">
       </div>
@@ -57,6 +68,8 @@
         <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="→">
       </div>
     </section>
+
+    <!-- Основний контент -->
     <main class="container py-4">
       <div class="row g-4">
         <nav aria-label="breadcrumb" style="background-color:transparent">
@@ -70,6 +83,8 @@
             <li class="breadcrumb-item active" aria-current="page">Корм</li>
           </ol>
         </nav>
+
+        <!-- Бокова панель з категоріями товарів -->
         <aside class="col-md-3 mb-4">
           <ul class="list-unstyled ms-2">
             <li>
@@ -105,6 +120,7 @@
               <a href="#">Миски</a>
             </li>
           </ul>
+          <!-- Прайс-лист компанії -->
           <div class="mt-4 text-center">
             <a href="#" class="d-block text-decoration-none">
               <img src="https://cdn-icons-png.flaticon.com/512/7613/7613104.png" style="margin-top: 40px; width: 90px" alt="Прайс-лист">
@@ -115,8 +131,9 @@
           </div>
         </aside>
 
-        <div class="col-md-9">
 
+        <!-- Галерея товарів -->
+        <div class="col-md-9">
           <div class="row g-4">
             <div class="col-6 col-sm-4 col-lg-4">
               <div class="card h-100 d-flex flex-column">
@@ -151,11 +168,11 @@
               <div class="card h-100 d-flex flex-column">
                 <div class="ratio ratio-1x1">
                   <div class="d-flex justify-content-center align-items-center w-100 h-100" style="background-color: #8ec8dd;">
-                    <img src="https://images.prom.ua/4679812687_w640_h640_purina-pro-plan.jpg" class="img-fluid rounded-0" style="object-fit: contain; width: 80%; height: 80%;" alt="Картинка товару">
+                    <img src="https://images.prom.ua/5133168428_w640_h640_purina-pro-plan.jpg" class="img-fluid rounded-0" style="object-fit: contain; width: 80%; height: 80%;" alt="Картинка товару">
                   </div>
                 </div>
                 <div class="card-body text-center mt-auto">
-                  <p class="card-text">Корм сухий для великих порід</p>
+                  <p class="card-text">Корм сухий для цуценят великих порід</p>
                   <strong>1 799 грн</strong>
                 </div>
               </div>
@@ -164,12 +181,12 @@
               <div class="card h-100 d-flex flex-column">
                 <div class="ratio ratio-1x1">
                   <div class="d-flex justify-content-center align-items-center w-100 h-100" style="background-color: #8ec8dd;">
-                    <img src="https://images.prom.ua/4679812687_w640_h640_purina-pro-plan.jpg" class="img-fluid" style="object-fit: contain; max-width: 80%; max-height: 80%;" alt="Картинка товару">
+                    <img src="https://www.purina.hr/sites/default/files/styles/product_380x380/public/2023-11/07613035114869_C1L1_44142661_0.jpg.webp?itok=Zif8eQg5" class="img-fluid" style="object-fit: contain; max-width: 80%; max-height: 80%;" alt="Картинка товару">
                   </div>
                 </div>
                 <div class="card-body text-center mt-auto">
-                  <p class="card-text">Корм сухий для великих порід</p>
-                  <strong>1 799 грн</strong>
+                  <p class="card-text">Корм сухий для цуценят середніх порід</p>
+                  <strong>2 299 грн</strong>
                 </div>
               </div>
             </div>
@@ -177,16 +194,18 @@
               <div class="card h-100 d-flex flex-column">
                 <div class="ratio ratio-1x1">
                   <div class="d-flex justify-content-center align-items-center w-100 h-100" style="background-color: #8ec8dd;">
-                    <img src="https://images.prom.ua/4679845050_w640_h640_purina-pro-plan.jpg" class="img-fluid rounded-0" style="object-fit: cover; width: 80%; height: 80%;" alt="Картинка товару">
+                    <img src="https://www.b2x.it/rest/images/2023/07/13/1465806.jpg?minImageFormat=@1x" class="img-fluid rounded-0" style="object-fit: cover; width: 80%; height: 80%;" alt="Картинка товару">
                   </div>
                 </div>
                 <div class="card-body text-center mt-auto">
-                  <p class="card-text">Корм сухий для середніх порід</p>
-                  <strong>1 499 грн</strong>
+                  <p class="card-text">Корм сухий для цуценят малих порід</p>
+                  <strong>1 650 грн</strong>
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- Пагінація -->
           <div class="pagination">
             <span class="page active">1</span>
             <span class="page">2</span>
@@ -197,24 +216,34 @@
             <span class="page">7</span>
           </div>
           <hr class="footer-separator" />
+
+          <!-- Опис футера -->
           <div class="footer-description">
-            <div class="desc-left">
-              <p>Улюбленці - члени родини, які потребують правильного догляду. Пухнастим друзям необхідні збалансоване харчування, іграшки та купання. Для дбайливої турботи і дозвілля господарі купують різноманітні зоотовари. У нашому магазині представлені кращі позиції від відомих брендів. Зайдіть у каталог і знайдіть все, що потрібно для щасливого життя пухнастого друга. .</p>
+            <div class=" col md-6 desc-left">
+              <p>Улюбленці - члени родини, які потребують правильного догляду.
+                Пухнастим друзям необхідні збалансоване харчування, іграшки та купання.
+                Для дбайливої турботи і дозвілля господарі купують різноманітні зоотовари.
+                У нашому магазині представлені кращі позиції від відомих брендів.
+                Зайдіть у каталог і знайдіть все, що потрібно для щасливого життя пухнастого друга. .</p>
             </div>
-            <div class="desc-right">
-              <p>Ми робимо все, щоб ви вигідно купували необхідні предмети. На сайті можна знайти акційні пропозиції. Зареєструйтеся та отримайте знижку в розмірі 5% на шопінг зоотоварів в Україні. Якщо сума ваших оплачених замовлень перевищить 5000 гривень, ви отримаєте -10% до наступних купівель. Доставка товарів здійснюється Новою Поштою у Київ, Дніпро, Одесу, Львів, Харків та інші міста України. </p>
+            <div class="col md-6 desc-right">
+              <p>Ми робимо все, щоб ви вигідно купували необхідні предмети. На сайті можна знайти акційні пропозиції.
+                Зареєструйтеся та отримайте знижку в розмірі 5% на шопінг зоотоварів в Україні.
+                Якщо сума ваших оплачених замовлень перевищить 5000 гривень, ви отримаєте -10% до наступних купівель.
+                Доставка товарів здійснюється Новою Поштою у Київ, Дніпро, Одесу, Львів, Харків та інші міста України. </p>
             </div>
           </div>
         </div>
       </div>
     </main>
+
+    <!-- Футер з інформацією про компанію та посиланнями -->
     <footer>
       <div class="container">
         <div class="footer-container">
           <div class="footer-left">
-            <p>© 2012 - 2013 ЗАТ «Компанія» <br>info@name.ua </p>
+            <p>© 2024 - 2025 ЗАТ «Компанія» <br>info@name.ua </p>
           </div>
-          <!-- Lista pośrodku -->
           <ul class="footer-list">
             <li>
               <a href="#">Головна</a>
@@ -241,6 +270,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модальне вікно для зворотного зв'язку -->
     <div id="feedback-modal" class="modal">
       <div class="modal-content">
         <h2>ЗВОРОТНИЙ ЗВ'ЯЗОК</h2>
@@ -258,6 +289,8 @@
         <button id="submit-btn">НАДІСЛАТИ</button>
       </div>
     </div>
+
+    <!-- Скрипт для слайдера та форми зворотного зв'язку -->
     <script>
       const images = ["https://t3.ftcdn.net/jpg/12/68/10/46/240_F_1268104624_rTjmmwXebk4XBS2q2dJnUNCYlJuSS7mf.jpg", "https://t4.ftcdn.net/jpg/06/28/90/55/240_F_628905566_0teuhhBBRgF5wQQA3SwEIiCdcRZYXLeH.jpg", "https://t4.ftcdn.net/jpg/07/71/30/07/240_F_771300713_vno3duu8JdHoBDmi7cXucqwGN2VgjqQs.jpg"];
       let current = 0;
@@ -295,7 +328,6 @@
         modal.style.display = 'flex';
         modal.style.animation = 'fadeIn 0.3s ease forwards';
       });
-
       window.addEventListener('click', function(e) {
         if (e.target === modal) {
           modal.style.display = 'none';
@@ -324,12 +356,11 @@
           }
         });
       });
-
       document.getElementById('feedback-modal').addEventListener('click', function(e) {
-    if (e.target === this) {
-        this.style.display = 'none';
-    }
-});
+        if (e.target === this) {
+          this.style.display = 'none';
+        }
+      });
     </script>
   </body>
 </html>

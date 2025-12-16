@@ -1,0 +1,168 @@
+/*
+  ЗАГАЛЬНІ СТИЛІ, ОБ'ЄДНАНІ З ТРЬОХ СТОРІНОК (2 РІВЕНЬ ТА 3 РІВЕНЬ)
+  Цей блок містить стилі, які однаково використовуються на головній сторінці
+  та двох сторінках другого рівня.
+*/
+
+/* 1. Основний шрифт PT Sans 14px та міжрядковий інтервал 22px */
+html,
+body {
+  height: 100%;
+  line-height: 22px;
+  color: #333;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-description div {
+  flex: 1;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left {
+  color: white;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+}
+
+.footer-list li a {
+  color: white;
+}
+
+.footer-right {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 20px;
+  text-align: left;
+  color: white;
+}
+
+.footer-icon {
+  font-size: 20px;
+  margin-right: 8px;
+  max-width: 40px;
+  background-color: transparent;
+}
+
+.footer-icon img {
+  background-color: transparent;
+}
+
+.footer-text a {
+  color: inherit;
+  line-height: 1.4;
+  max-width: 150px;
+  display: inline-block;
+}
+
+.footer-description {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-description div {
+  flex: 1;
+}
+
+footer {
+  background-color: #3e3e3e;
+  padding: 20px 0;
+  position: relative;
+  margin-top: auto;
+}
+
+/* Головне меню */
+nav {
+  background-color: #787878;
+  color: white;
+}
+
+/* 6. Меню вирівняне по центру */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: bold;
+  margin-right: 2vw;
+  font-size: large;
+}
+
+nav ul li:not(:last-child)::after {
+  content: "|";
+  color: white;
+}
+
+/* 3. Слайдер має тягнутися по всій ширині екрану, з ефектом fade */
+#slider {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  position: relative;
+}
+
+#slider img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+
+/* 8. Кросбраузерне підключення шрифта за допомогою @font-face */
+@font-face {
+  font-family: "PT Sans Local";
+  src: url("fonts/PTSans-Regular.woff2") format("woff2"),
+    url("fonts/PTSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+header,
+nav,
+footer {
+  width: 100%;
+}
+
+.contacts {
+  text-align: right;
+  font-family: "PT Sans Local", sans-serif;
+}

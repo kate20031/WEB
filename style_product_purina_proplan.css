@@ -1,0 +1,123 @@
+/* Стилізація зображення собачого корму */
+.dog-food-img {
+  border: 3px solid #b388eb;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  background-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Контейнер для центрування і обмеження ширини */
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-info h1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+}
+
+.breadcrumb li {
+  display: inline;
+  color: #555;
+}
+
+.breadcrumb li + li:before {
+  content: "> ";
+  color: #999;
+}
+
+.content-area p {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.content-area ul li {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+
+/* Бокова панель */
+aside {
+  width: 25%;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  margin-top: 15px;
+  margin-right: 10%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+aside h1 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  word-wrap: break-word;
+  /max-width: 100%;
+  overflow: hidden;
+}
+
+* {
+  word-wrap: break-word;
+}
+
+aside,
+section {
+  word-wrap: break-word;
+}
+
+aside h1,
+aside p,
+aside ul,
+.product-section p {
+  word-wrap: break-word;
+}
+
+aside ul li {
+  word-wrap: break-word;
+}
+
+aside ul {
+  list-style: none;
+  max-width: 100%;
+  padding-left: 0;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.ingredient-img {
+  width: 60%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 3px;
+}
