@@ -1,5 +1,3 @@
-
-/* 10. Форма зворотного зв'язку має з'являтися з fade-ефектом */
 #feedback-modal {
   display: none;
   position: fixed;
@@ -10,12 +8,11 @@
   background-color: rgba(0, 0, 0, 0.5);
   align-items: center;
   justify-content: center;
-  animation: fadeIn 0.3s ease forwards;  /* Анімація для fadeIn */
+  animation: fadeIn 0.3s ease forwards;  /* Fade-in animation */
   opacity: 0;
 }
 
-
-/* Анімація появи  */
+/* Fade-in animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -25,6 +22,7 @@
   }
 }
 
+/* Slide-in animation */
 @keyframes slideIn {
   from {
     transform: translateY(-20px);
@@ -46,13 +44,12 @@ main {
   padding: 0 10px;
 }
 
-/* 1. Шапка сайту */
 header {
   background: #f5f5f5;
   padding: 20px 0;
 }
 
-/* Форма зворотного зв'язку */
+/* Feedback modal form */
 .modal {
   display: none;
   position: fixed;
@@ -76,6 +73,7 @@ header {
   animation: fadeIn 0.3s ease forwards;
 }
 
+/* Inputs and textarea inside modal */
 .modal input,
 .modal textarea {
   width: 100%;
@@ -86,18 +84,18 @@ header {
   font-family: inherit;
 }
 
-/* Повідомлення про помилки */
+/* Error message styling */
 .input-error {
   border: 1px solid red;
   box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
   outline: none;
 }
 
-
 .input-error::placeholder {
   color: #ccc;
 }
 
+/* Modal button styling */
 .modal button {
   width: 100%;
   background: #444;
@@ -113,15 +111,18 @@ header {
   background: #222;
 }
 
+/* Sidebar headings */
 aside h5 {
   font-weight: bold;
   margin-bottom: 15px;
 }
 
+/* Sidebar list items */
 aside ul li {
   margin-bottom: 5px;
 }
 
+/* Breadcrumb styling */
 .breadcrumb {
   background: none;
   padding: 0;
@@ -129,11 +130,12 @@ aside ul li {
   font-size: 14px;
 }
 
-/* Бічна панель*/
+/* Sidebar general font */
 aside {
   font-family: "PT Sans Local", sans-serif;
 }
 
+/* Sidebar links and strong elements */
 aside ul li > a,
 aside ul li > strong {
   display: block;
@@ -157,6 +159,7 @@ aside .text-center a {
   color: #666;
 }
 
+/* Pagination styling */
 .pagination {
   display: flex;
   justify-content: center;
@@ -176,8 +179,7 @@ aside .text-center a {
   font-weight: bold;
 }
 
-
-/* Кнопки-перемикачі (стрілки) */
+/* Arrow buttons for sliders */
 .arrow {
   position: absolute;
   top: 50%;
@@ -205,6 +207,7 @@ aside .text-center a {
   right: 250px;
 }
 
+/* Underline helper class */
 .underline {
   text-decoration: underline;
 }
