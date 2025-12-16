@@ -1,38 +1,46 @@
+/* Reset margins, padding and set box-sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Centered container with max width */
 .container {
   max-width: 980px;
   margin: 0 auto;
 }
 
+/* Header styling */
 header {
   background-color: #f5f5f5;
   padding: 20px 0;
 }
 
+/* Header content layout */
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Company name in header */
 .company-info h1 {
   font-size: 18px;
   font-weight: bold;
 }
 
+/* Navigation bar background */
 nav {
   background-color: #787878;
 }
 
+/* Main content area */
 main {
   flex: 1;
 }
 
+/* Breadcrumb styling */
 .breadcrumb li {
   display: inline;
   color: #555;
@@ -43,17 +51,20 @@ main {
   color: #999;
 }
 
+/* Paragraphs in content area */
 .content-area p {
   margin-top: 15px;
   font-size: 12px;
 }
 
+/* List items in content area */
 .content-area ul li {
   text-align: center;
   font-size: 12px;
   margin-top: 20px;
 }
 
+/* Sidebar styling */
 aside {
   width: 25%;
   background-color: black;
@@ -64,6 +75,7 @@ aside {
   box-sizing: border-box;
 }
 
+/* Sidebar headings */
 aside h1 {
   text-align: center;
   font-size: 20px;
@@ -73,6 +85,7 @@ aside h1 {
   overflow: hidden;
 }
 
+/* Ensure text wraps correctly */
 * {
   word-wrap: break-word;
 }
@@ -93,6 +106,7 @@ aside ul li {
   word-wrap: break-word;
 }
 
+/* Sidebar list styling */
 aside ul {
   list-style: none;
   max-width: 100%;
