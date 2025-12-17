@@ -2,6 +2,7 @@
 
 Welcome to **ZooMarket**, a modern, responsive e-commerce website for pet lovers. This project demonstrates a multi-page pet store featuring dog and cat food. Built with HTML, CSS, Bootstrap 5 and JavaScript, it includes interactive sliders, modals, product pages, and a clean, user-friendly layout.
 
+Available on https://kate20031.github.io/ZooMarket/
 ---
 
 ## 🌟 Features
